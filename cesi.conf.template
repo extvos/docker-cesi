@@ -1,0 +1,19 @@
+[node:{{node1-name}}]
+username = {{username}}
+password = {{password}}
+host = {{hostname-or-ipaddr}}
+port = {{port}}
+
+[node:{{node2-name}}]
+username = {{username}}
+password = {{password}}
+host = {{hostname-or-ipaddr}}
+port = {{port}}
+
+;[environment:<environment_name>]
+;members = <node_name>, <node_name2>
+
+[cesi]
+database = /cesi/userinfo.db
+activity_log = /var/log/cesi.log
+host = 0.0.0.0
