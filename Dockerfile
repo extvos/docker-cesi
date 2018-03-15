@@ -9,7 +9,8 @@ RUN apk update \
     && git clone https://github.com/Gamegos/cesi \
     && mkdir /var/log/cesi \
     && touch $CESI_USERINFO_FILE \
-    && sqlite3 $CESI_USERINFO_FILE < cesi/userinfo.sql
+    && sqlite3 $CESI_USERINFO_FILE < cesi/userinfo.sql \
+    && apk del sqlite-dev git
 
 EXPOSE 5000 
 
